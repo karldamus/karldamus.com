@@ -1,0 +1,68 @@
+// this file contains all the typography used in this project
+@font-face {
+    font-family: NewYork;
+    src: url('../../fonts/NewYorkMedium-Black.otf') format('opentype');
+    font-weight: 900;
+}
+@font-face {
+    font-family: NewYork;
+    src: url('../../fonts/NewYorkMedium-Regular.otf') format('opentype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: NewYork;
+    src: url('../../fonts/NewYorkMedium-RegularItalic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: NewYork;
+    src: url('../../fonts/NewYorkMedium-Heavy.otf') format('opentype');
+    font-weight: 700;
+}
+
+body {
+    font-family: 'NewYork';
+    color: #585858;
+    // color: blue;
+}
+
+// base elements
+h1,h2,h3,h4,h5,h6,p,a,li {
+    font-family: 'NewYork';
+}
+h1,h2,h4 {
+    text-transform: lowercase;
+}
+
+h1 {
+    font-size: 3.4em;
+    font-weight: 500;
+
+    @include tablet {
+        font-size: 4em;
+    }
+
+    @include desktop {
+        font-size: 5em;
+    }
+
+    @include largeDesktop {
+        font-size: 7em;
+    }
+
+    @include ultraWide {
+        font-size: 10em;
+    }
+}
+
+// classed elements
+.logo h4 {
+    font-weight: 700;
+}
+.navLinks .navLink {
+    text-transform: lowercase;
+}
+.hFlip {
+    // add code to rotate horizontally
+}

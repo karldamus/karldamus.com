@@ -1,0 +1,99 @@
+.page {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+    "top"
+    "bottom";
+    grid-template-rows: 40% 60%;
+
+    .left {
+        grid-area: bottom;
+        padding: 40px 20px;
+        padding-bottom: 0px;
+        h3, h1 {
+            font-size: 2.6em;
+        }
+        p,h4 {
+            text-transform: none;
+        }
+        h4 {
+            color: #5F6CCF;
+            font-size: 1.6em;
+            margin: 10px 0;
+            font-weight: lighter;
+        }
+        .socials {
+            .mail {
+                margin-top: 10px;
+            }
+            margin-top: 20px;
+            .social {
+                display: grid;
+                grid-template-columns: 50px 1fr;
+                align-items: center;
+
+                img {
+                    width: 30px;
+                    height: auto;
+                }
+            }
+        }
+    }
+    .right {
+        grid-area: top;
+        position: relative;
+        img {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+}
+
+@media (min-width: 768px) {
+    .page {
+        width: 100vw;
+        grid-template-areas: unset;
+        grid-template-rows: unset;
+        display: none;
+        display: flex;
+    }
+    .left {
+        width: 70%;
+        margin-left: 5vw;
+        font-size: 22px;
+        margin-top: 10vh;
+        margin-right: 1vw;
+    }
+    .right {
+        width: 100%;
+        height: 100vh;
+        align-self: flex-end;
+        float: right;
+        background: blue;
+
+        img {
+            width: 100%;
+            height: 100%;
+            // display: none;
+            object-fit: cover;
+            float: right;
+            object-position: 30%;
+        }
+    }
+}
+@media (min-width: 1024px) {
+    .left {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .left {
+        font-size: 26px;
+        margin-left: 10vw;
+    }
+}

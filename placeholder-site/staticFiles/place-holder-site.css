@@ -1,0 +1,121 @@
+.page {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "top" "bottom";
+  -ms-grid-rows: 40% 60%;
+      grid-template-rows: 40% 60%;
+}
+
+.page .left {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: bottom;
+  padding: 40px 20px;
+  padding-bottom: 0px;
+}
+
+.page .left h3, .page .left h1 {
+  font-size: 2.6em;
+}
+
+.page .left p, .page .left h4 {
+  text-transform: none;
+}
+
+.page .left h4 {
+  color: #5F6CCF;
+  font-size: 1.6em;
+  margin: 10px 0;
+  font-weight: lighter;
+}
+
+.page .left .socials {
+  margin-top: 20px;
+}
+
+.page .left .socials .mail {
+  margin-top: 10px;
+}
+
+.page .left .socials .social {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50px 1fr;
+      grid-template-columns: 50px 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page .left .socials .social img {
+  width: 30px;
+  height: auto;
+}
+
+.page .right {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: top;
+  position: relative;
+}
+
+.page .right img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .page {
+    width: 100vw;
+        grid-template-areas: unset;
+    -ms-grid-rows: unset;
+        grid-template-rows: unset;
+    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .left {
+    width: 70%;
+    margin-left: 5vw;
+    font-size: 22px;
+    margin-top: 10vh;
+    margin-right: 1vw;
+  }
+  .right {
+    width: 100%;
+    height: 100vh;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    float: right;
+    background: blue;
+  }
+  .right img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    float: right;
+    -o-object-position: 30%;
+       object-position: 30%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .left {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .left {
+    font-size: 26px;
+    margin-left: 10vw;
+  }
+}
+/*# sourceMappingURL=place-holder-site.css.map */

@@ -1,0 +1,11 @@
+// this file contains all the sass variables used throughout this project
+$colors: (
+    bg: #EAEAEA,
+    text: #585858,
+    a-green: #B0FF53,
+    a-blue: #5F6CCF
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}

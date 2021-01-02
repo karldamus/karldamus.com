@@ -1,0 +1,14 @@
+.socialsWrapper {
+    position: fixed;
+    top: 0;
+    left: 10px;
+
+    .greyBar {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 100vh;
+        width: 6px;
+        background-color: color(text);
+    }
+}
