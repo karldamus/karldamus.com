@@ -4,6 +4,7 @@
 ```bash
 cd karldamus.com
 python -m venv virt
+source virt/bin/activate
 cd project
 python manage.py runserver
 ```
