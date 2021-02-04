@@ -13,10 +13,17 @@
     <script src="{% static 'js/main.js' %}"></script>
 </head>
 <body>
-    <div class="pageWrapper">
+    <div class="globalPageWrapper" id="globalHomepageWrapper">
 
-        <!-- {% include "components/navigation.html" %} -->
-        {% include "test.html" %}
+        <!-- {% include "components/bg-lines.html" %} -->
+
+        {% include "components/navigation.html" %}
+        {% include "components/hero.html" %}
+        {% include "components/floatingLinks.html" %}
+        {% include "components/quickAbout.html" %}
+        
+        
+        <!-- {% include "test.html" %} -->
 
     
     </div>

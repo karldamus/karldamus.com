@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
-    <header>
+    <header class="desktopHeader">
         <div class="logo">
-            <p>test</p>
+            <h5>karldamus</h5>
         </div>
         <nav>
 
@@ -17,6 +18,20 @@
         <div class="socials">
 
         </div>
+    </header>
+    <header class="mobileHeader">
+        <div class="logo">
+            <h5>karldamus</h5>
+        </div>
+        <div class="menuIcon">
+            <span></span>
+            <span class="middle"></span>
+            <span></span>
+            <!-- <img src="{% static 'img/icons/menu.svg' %}" alt=""> -->
+        </div>
+        <!-- <div class="menu">
+
+        </div> -->
     </header>
 
     

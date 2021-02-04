@@ -1,24 +1,22 @@
 @import 'base/reset';
 @import 'base/mixins';
+@import 'base/imports';
 @import 'base/variables';
 @import 'base/typography';
 
-@import 'outlines/wrapper';
-@import 'outlines/grid';
+@import 'global/global';
 
-@import 'components/cta';
-@import 'components/circles';
-@import 'components/form';
+@import 'components/bg';
+@import 'components/forms/cta';
+@import 'components/forms/inputs';
+@import 'components/images/imageGalleryMaster';
+@import 'components/carousel';
 
-@import 'layouts/mobile';
-@import 'layouts/landscape';
-@import 'layouts/desktop';
+@import 'blocks/header';
+@import 'blocks/footer';
+@import 'blocks/contactForm';
 
-@import 'sections/navigation';
-@import 'sections/socials';
-@import 'sections/hero';
-@import 'sections/portfolio';
-@import 'sections/about';
-@import 'sections/blog';
-@import 'sections/contact';
-@import 'sections/footer';
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/portfolio';
+@import 'pages/contact';
